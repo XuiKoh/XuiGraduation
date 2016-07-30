@@ -6,10 +6,12 @@
 		<style type="text/css" media="screen">
 		html, body { height:100%; background-color: #808080;}
 		body { margin:0; padding:0; overflow:hidden; }
-		#flashContent { width:100%; height:100%; }
+		#flashContent { width:100%; height:100%;z-index: 0;}
+		#image {float: left;overflow: visible;position: relative;top: -1080px;width: 200px;height: 100px;z-index: 1000;}
 		</style>
 	</head>
 	<body>
+
 		<div id="flashContent">
 			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1920" height="1080" id="main" align="left">
 				<param name="movie" value="C3A.swf" />
@@ -45,6 +47,10 @@
 				<!--<![endif]-->
 			</object>
 		</div>
-		<img src="c3a.jpg" alt="HomePic" style="width:1920px;height:1080px;">
+		<a href="c3a.jpg" target="_blank">
+		<img id="image" src="c3a.jpg" alt="HomePic" >
+		</a>
+		
+
 	</body>
 </html>
