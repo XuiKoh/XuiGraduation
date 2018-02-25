@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-image: linear-gradient(to top, #0e0e0e 0%, #a4cbff 100%);
     min-height: 100vh;
     font: normal 16px sans-serif;
 }
@@ -35,12 +35,15 @@ body {
 
 .tz-gallery .thumbnail:hover {
     transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 .tz-gallery .lightbox img {
-    border-radius: 4px 4px 0 0;
+    border-radius: 8px 8px 0 0;
     width: 400px; 
     height: 200px;
+    border: 1px solid #ddd;
+    padding: 5px;
 }
 
 .tz-gallery .caption{
